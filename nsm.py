@@ -3,7 +3,8 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-
+st.title('This is a title')
+st.title('A title with _italics_ :blue[colors] and emojis :sunglasses:')
 
 money = pd.read_csv("money_data7.csv")
 
@@ -42,6 +43,7 @@ plt.subplot(224)
 plt.plot(  list( money['A_MONTH'] ), list( money['HOUSE_PRICE'] ), color='yellow' , marker='o'     ) 
 plt.xticks(tuple(money['A_MONTH']) )
 plt.title('HOSE PIRCE')
+
 
 st.pyplot(fig)
 st.dataframe(money)
