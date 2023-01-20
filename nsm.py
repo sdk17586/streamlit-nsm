@@ -44,3 +44,4 @@ plt.xticks(tuple(money['A_MONTH']) )
 plt.title('HOSE PIRCE')
 
 st.pyplot(fig)
+st.datafame(money)
