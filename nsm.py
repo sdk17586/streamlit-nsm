@@ -19,7 +19,6 @@ st.write('You selected:', option)
 
 money = money[:] [money['A_YEAR']== option2]
 
-money = money[:] [money['A_YEAR']==2022]
 
 fig, ax = plt.subplots(2,2, figsize=(12,8))
 
