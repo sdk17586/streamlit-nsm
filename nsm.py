@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 
 st.title('america and korea rate corr')
 
+st.sidebar.success("Select a demo above.")
+
 money = pd.read_csv("money_data7.csv")
 
 import streamlit as st
