@@ -59,7 +59,6 @@ if select_language =='line graph':
     except:      
           pass
   
-
 def bar_chart():
 
     url = "https://sports.news.naver.com/kbaseball/record/index?category=kbo&year="
@@ -101,7 +100,7 @@ def bar_chart():
     st.pyplot(fig)
     st.dataframe(df7)
 
-        
+st.set_page_config(layout="centered")        
 
 with st.form(key ='Form1'):
     with st.sidebar:
