@@ -47,6 +47,8 @@ def  plotting_demo():
     st.pyplot(fig)
     st.dataframe(money)
     
+
+    
        
 
 def bar_chart():
@@ -94,16 +96,11 @@ st.set_page_config(layout="centered")
 
 with st.form(key ='Form1'):
     with st.sidebar:
+         select_language = st.sidebar.radio('What do you want ?', ('line graph', 'bar graph', 'pie graph', 'histogram graph','corr graph','word cloud','box graph' ))
         
-        select_language = st.sidebar.radio('What do you want ?', ('line', 'bar', 'pie'))
         
-        
-if select_language =='line':           
+if select_language =='line graph':        
     try:
-          plotting_demo()  
+         plotting_demo()  
     except:      
-          pass
-
-        
-elif select_language =='bar':
-    bar_chart()
+          pass     
