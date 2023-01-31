@@ -46,6 +46,17 @@ def  plotting_demo():
 
     st.pyplot(fig)
     st.dataframe(money)
+    
+with st.form(key ='Form1'):
+    with st.sidebar:
+         select_language = st.sidebar.radio('What do you want ?', ('line graph', 'bar graph', 'pie graph', 'histogram graph','corr graph','word cloud','box graph' ))
+        
+        
+if select_language =='line graph':        
+    try:
+         plotting_demo()  
+    except:      
+          pass     
        
 
 def bar_chart():
