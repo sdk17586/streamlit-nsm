@@ -103,4 +103,7 @@ if select_language =='line graph':
     try:
          plotting_demo()  
     except:      
-          pass     
+          pass 
+        
+elif select_language =='bar':
+    bar_chart()   
