@@ -109,11 +109,11 @@ if select_language =='금리와 집값 빠르게 파악하기':
 elif select_language =='야구 순위와 승률 빠르게 파악하기':
     bar_chart()            
 ####        
-if select_language =='line graph':        
-    try:
-         plotting_demo()  
-    except:      
-          pass 
+# if select_language =='line graph':        
+#     try:
+#          plotting_demo()  
+#     except:      
+#           pass 
         
-elif select_language =='bar graph':
-    bar_chart()   
+# elif select_language =='bar graph':
+#     bar_chart()   
