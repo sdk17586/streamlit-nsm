@@ -6,10 +6,11 @@ import numpy as np
 
 def  plotting_demo():
     
-    uploaded_file = st.file_uploader("Choose a file")
+    #uploaded_file = st.file_uploader("Choose a file")
 
-    money=pd.read_csv(uploaded_file)
- 
+    #money=pd.read_csv(uploaded_file)
+    money = pd.read_csv("money_data7.csv")
+
     option = st.selectbox(
         'How would you like to choice year ?',
         ('2020', '2021', '2022'))
@@ -45,14 +46,11 @@ def  plotting_demo():
 
     st.pyplot(fig)
     st.dataframe(money)
-    
-
-    
        
 
 def bar_chart():
 
-    url = "https://sports.news.naver.com/kbaseball/record/index?category=kbo&year="
+    url = " https://sports.news.naver.com/kbaseball/record/index?category=kbo&year= "
 
     years = ['2015', '2016','2017', '2018', '2019', '2020', '2021', '2022' ]
 
@@ -91,24 +89,15 @@ def bar_chart():
     st.pyplot(fig)
     st.dataframe(df7)
 
-#st.set_page_config(layout="centered")        
+st.set_page_config(layout="centered")        
 
 with st.form(key ='Form1'):
     with st.sidebar:
-         select_language = st.sidebar.radio('What do you want ?', ('line graph', 'bar graph', 'pie graph', 'histogram graph','corr graph','word cloud','box graph' ))     
-# with st.form(key ='Form2'):
-#     with st.sidebar:         
-         select_language = st.sidebar.radio('데이터 분석 결과', ('금리와 집값 빠르게 파악하기', '야구 순위와 승률 빠르게 파악하기', '다른 데이터 분석'))
         
-if select_language =='line graph':        
-    plotting_demo()  
-        
-elif select_language =='bar graph':
-    bar_chart()   
-    
+        select_language = st.sidebar.radio('데이터 분석 결과', ('금리와 집값 빠르게 파악하기', '야구 순위와 승률 빠르게 파악하기', '다른 데이터 분석'))
         
         
-elif select_language =='금리와 집값 빠르게 파악하기':  
+if select_language =='금리와 집값 빠르게 파악하기':  
     plotting_demo()
   
 
