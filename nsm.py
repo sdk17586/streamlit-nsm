@@ -49,7 +49,7 @@ def  plotting_demo():
     plt.title('House Price')
 
     st.pyplot(fig)
-    st.dataframe(돈)
+    #st.dataframe(money)
        
 
 def bar_chart():
